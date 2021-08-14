@@ -1,3 +1,33 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@NTcse 
+NTcse
+/
+TEST
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+TEST/index.html
+@NTcse
+NTcse UPLOAD TEST
+Latest commit b4f0066 7 hours ago
+ History
+ 1 contributor
+54 lines (46 sloc)  1.22 KB
+  
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -16,17 +46,12 @@
   </div>
  
   </div>
-
   <div class="container">
-
+    
     <div class="live transform"></div>
     <p id="demo"></p>
     <button onclick="getRndInteger()">RANDOM ROLL</button>
-<div>
-<audio id = "audio" control = "" style = "width: 100%;"> 
-<source src = "Dora.mp3" type = "audio / mpeg"> 
-Vui lòng cập nhật trình duyệt của bạn không hỗ trợ phần tử âm thanh. </audio>
-</div>
+    
 </body>
 </html>
 <script>
@@ -40,7 +65,6 @@ Vui lòng cập nhật trình duyệt của bạn không hỗ trợ phần tử 
     },3000);
   }); 
 });
-
 </script>
 <script>
 function getRndInteger(){
@@ -49,18 +73,24 @@ function getRndInteger(){
   "Bananas",
   "Pears1"
 ];
+var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+document.getElementById('demo').innerHTML  = randomItem;
+}
+
+
 </script>
-<script type="text/javascript">
-function autoplay(){
-    var r =confirm("Bạn cho phép website tự động chơi nhạc?");
-    if (r == true) {
-        document.getElementById("audio").play();
-    }
-  }
-</script>
-<script>autoplay();</script> 
 
 
-
-
-
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
