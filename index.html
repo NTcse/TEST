@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body >
+  <div class="showloading" style="display: none;">
+    <div class="loading">
+    </div>
+    <div class="testld">ĐANG KẾT NỐI HỆ THỐNG.<br>VUI LÒNG ĐỢI TRONG GIÂY LÁT CHẬM NHẤT 60s.
+    </div>
+  </div>
+ 
+  </div>
+  <div class="container">
+    
+    <div class="live transform"></div>
+    <p id="demo"></p>
+    <button onclick="getRndInteger()">RANDOM ROLL</button>
+    
+</body>
+</html>
+<script>
+  $(window).load(function() {
+  // $("#btn").hide();
+  $('.showloading').toggle();
+  $(document).ready(function(){
+    setInterval(function(){
+      $('.showloading').hide();
+      // $("#btn").show();
+    },3000);
+  }); 
+});
+</script>
+<script>
+function getRndInteger(){
+  var myArray = [
+  "Apples",
+  "Bananas",
+  "Pears1"
+];
+var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+document.getElementById('demo').innerHTML  = randomItem;
+}
+
+
+</script>
+
+
+
