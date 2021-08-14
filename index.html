@@ -23,10 +23,9 @@
     <p id="demo"></p>
     <button onclick="getRndInteger()">RANDOM ROLL</button>
 <div>
-<audio controls autoplay>
-  <source src="Dora.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+<audio id = "audio" control = "" style = "width: 100%;"> 
+<source src = "Dora.mp3" type = "audio / mpeg"> 
+Vui lòng cập nhật trình duyệt của bạn không hỗ trợ phần tử âm thanh. </audio>
 </div>
 </body>
 </html>
@@ -41,6 +40,7 @@
     },3000);
   }); 
 });
+
 </script>
 <script>
 function getRndInteger(){
@@ -50,6 +50,17 @@ function getRndInteger(){
   "Pears1"
 ];
 </script>
+<script type="text/javascript">
+function autoplay(){
+    var r =confirm("Bạn cho phép website tự động chơi nhạc?");
+    if (r == true) {
+        document.getElementById("audio").play();
+    }
+  }
+</script>
+<script>autoplay();</script> 
+
+
 
 
 
